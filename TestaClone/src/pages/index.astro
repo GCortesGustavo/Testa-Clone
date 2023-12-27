@@ -1,0 +1,27 @@
+---
+import HeroSection from "../components/HeroSection.astro"
+import Landingheader from '../components/Landingheader.astro';
+import Layout from '../layouts/Layout.astro';
+import ChargeSection from "../components/ChargeSection.astro";
+import ChargeSection1 from "../components/ChargeSection1.astro";
+import ChargeSection2 from "../components/ChargeSection2.astro";
+---
+
+<Layout title="TestaClone">
+	<Landingheader />
+	<main class="snap-y snap-mandatory relative w-full h-screen overflow-auto scroll-smooth">
+		<div class="snap-center">
+			<HeroSection />
+		</div>
+		<div class="snap-center">
+			<ChargeSection />
+		</div>
+		<div class="snap-center">
+			<ChargeSection1 />
+		</div>
+		<div class="snap-center">
+			<ChargeSection2 />
+		</div>
+	</main>
+</Layout>
+
